@@ -1,13 +1,25 @@
 package main
 
-import "log"
+import (
+	"log"
+	"time"
+)
 
-func main() {
-	var word string
-	word = saySomething("Himanshu")
-	log.Println(word)
+
+type User struct {
+	FirstName string
+	LastName  string
+	Age       int
+	BirthDate time.Time
 }
 
-func saySomething(s string) string {
-	return s
+func main() {
+
+	user := User {
+		FirstName: "Himanshu",
+		LastName: "Yadav",
+	}
+
+	log.Println(user.FirstName)
+
 }
