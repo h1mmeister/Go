@@ -5,12 +5,12 @@ import (
 	"net/http"
 )
 
-// home page handler
+// Home - home page handler
 func Home(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, "home.html")
+	render.RenderTemplate(w, "home.page.tmpl")
 }
 
-// about page handler
+// About - about page handler
 func About(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, "about.html")
+	render.RenderTemplate(w, "about.page.tmpl")
 }
